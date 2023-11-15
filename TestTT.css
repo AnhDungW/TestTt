@@ -1,0 +1,293 @@
+body{
+    margin: 0 auto;
+    width: 100%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #008752;
+    /* position: absolute; */
+    width: 100%;
+}
+.menu a{
+    color: white;
+    text-decoration: none;
+    margin: 0 30px;
+    font-size: 15px;
+}
+.menu a:hover{
+    text-decoration:underline;
+
+}
+.slide{
+    /* position: relative; */
+    overflow: hidden;
+
+}
+
+#slide{
+    width: 100%;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.slider{
+    overflow: hidden;
+    flex: 0 0 100%;
+    box-sizing: border-box;
+    width: 100%;
+}
+/* .slide img{
+    animation: fade 1.5s ease-in-out infinite;
+}
+@keyframes fade {
+    0%, 100% {
+        opacity: 0.4;
+    }
+    20%, 80% {
+        opacity: 1;
+    }
+} */
+#slide{
+    height: 700px;
+}
+.banner>.btn-learn{
+    position: absolute;
+    top: 70%;
+    left: 190px;
+    bottom: 200px;
+    height: 50px;
+    width: 200px;
+    color: #008752;
+    font-size: 24px;
+    border: none;
+    border-radius: 30px;
+    background-color: #ffffff;
+    color: #008752;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s ;
+}
+
+.banner .btn-learn:hover{
+    background-color: #008752;
+    color: #fff;
+}
+.banner>h1{
+    position: absolute;
+    top: 40%;
+    left: 270px;
+    width: 303px;
+    bottom: 200px;
+    font-size: 40px;
+    color: #fff;
+    display: inline-block;
+    animation: textScale 2s infinite alternate;
+}
+.carousel-item>img{
+    height: 600px;
+}
+@keyframes textScale {
+    50% {
+        transform: scale(1.5);
+      }
+    100% {
+      transform: scale(2);
+    }
+  }
+
+.justify-space-between{
+    justify-content: space-between;
+}
+article{
+    margin-top: 50px;
+    text-align: center;
+   
+}
+article p{
+    width: 55%;
+    margin:  0 auto;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+aside{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+    overflow: hidden;
+}
+.banner1{
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    height: 100%;
+    /* animation: slide 5s linear infinite;  */
+}
+.banner1 .t1{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    color: #ffffff; /* Màu chữ */ 
+}
+.banner img{
+    width: 100%;
+}
+/* ================ */
+.item{
+    background-color: white;
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    position: absolute;
+    background: rgba(0, 135, 82, 0.8); ;
+    transition: 1s;
+    opacity: 0;
+}
+.item>h2{
+    margin-top: 100px;
+}
+.item>p{
+    width: 2000x;
+    margin: 20px auto;
+}
+.item>a {
+    margin-top: 200px;
+    color: white;
+}
+.banner1:hover .item{
+    top: 0%;
+    transition: 1s;
+    opacity: 1;
+    height: 100%;
+    opacity: 1;
+}
+.banner1:hover .t1{
+    display: none;
+}
+.btn{
+    width: 90%;
+    margin: 0 auto;
+}
+.btn-seeall{
+    margin-top: 50px;
+    width: 150px;
+    border-radius: 20px;
+    color: #008752;
+    border: 1px #008752 solid;
+    height: 35px;
+    border-radius: 30px; /* Điều này tạo ra góc bo tròn */
+    background-color: #ffffff;
+    color: #008752;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    float: right;
+}
+.btn-seeall:hover{
+    background-color: #008752;
+    color: white;
+    border: 2px solid;
+}
+.end{
+    margin-top: 50px;
+    background-image: url('/img/b2.jpg');
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover; 
+    color: white;
+    height: 696px;
+    padding-top: 50px;
+}
+.Latest{
+    align-items: center;
+    font-size: 50px;
+    margin: 20px 0px;
+}
+.content{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+.item1{
+    width: 320px;
+    background-color: white;
+    color: #000000;
+    height: 440px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.h-440{
+    height: 440px;
+}
+.bg-img{
+    background-image: url('/img/banner1.jpg');
+    width: 320px;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+}
+.item1>a{
+    color: #008752;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+}
+.item2{
+    width: 320px;
+    height: 570px;  
+}
+.content2{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    height: 24%;
+    background-color: white;
+    color: #000000; 
+    line-height: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.content2>a{
+    font-size: 22px; 
+    text-decoration: none; 
+    color: black;
+    margin: 10px;
+}
+.btn2{
+    width: 200px;
+    margin: 0 auto;
+}
+.btn2 button{
+    border-radius: 20px;
+    width: 100%;
+    color: #008752;
+    border: 1px #008752 solid;
+    height: 35px;
+    border-radius: 30px; /* Điều này tạo ra góc bo tròn */
+    background-color: #008752;
+    color: #fff;
+    font-weight: 1px solid black;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+footer{
+    align-items: center;
+    padding: 40px 0px 40px 150px;
+}
+footer h1{
+    color: #008752;
+}
+footer .line{
+    display: inline-block;
+    margin: 0 20px 0 20px;
+    width: 300px;
+    height: 1px;
+    background-color:#008752;
+}
+.flex{
+    display: flex;
+}
